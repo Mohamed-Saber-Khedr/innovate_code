@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
-import 'Features/onboarding/presention/view/onboarding.dart';
-// import 'Features/splash_screen/presention/view/splash_body.dart';
+import 'package:innova_code/Features/splash_screen/presention/view/splash_body.dart';
 
+class InnovaApp extends StatelessWidget {
+  const InnovaApp({super.key});
 
-
- class InnovaApp extends StatelessWidget {
-   const InnovaApp({super.key});
-
-
-   @override
-   Widget build(BuildContext context) {
-
-     return MaterialApp(
-       debugShowCheckedModeBanner: false,
-       home: Scaffold(
-         body:Onboarding(),
-       ),
-     );
-   }
- }
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: SplashScreen(),
+      ),
+      routes: {
+      },
+    );
+  }
+}
